@@ -1,0 +1,12 @@
+<div class="container">
+  <h3>Trang chủ</h3>
+  <div class="product-list">
+    <div class="product" *ngFor="let item of product">
+      <a routerLink="/detail/{{ item._id }}">
+        <p>{{ item.title }}</p>
+        <p>{{ item.genres }}</p>
+        <button>Mua đê</button>
+      </a>
+    </div>
+  </div>
+</div>

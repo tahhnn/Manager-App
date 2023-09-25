@@ -1,0 +1,26 @@
+/* product-detail.component.css */
+
+.product-info {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+  }
+  
+  .product-info h2 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  
+  .product-info .product-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .product-info .product-price {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  

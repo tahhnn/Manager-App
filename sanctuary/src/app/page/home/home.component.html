@@ -1,0 +1,31 @@
+<div class="container">
+  <h1>Quản lý sản phẩm</h1>
+  <p>Lọc theo tên:</p>
+  <input type="text" [(ngModel)]="searchText" />
+  <table>
+    <thead>
+      <tr>
+        <th>*</th>
+        <th>Tên Phim</th>
+        <th>Thể loại Phim</th>
+        <th>Ngày Phát hành</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of products; index as i">
+        <td>{{ i + 1 }}</td>
+
+        <td>{{ item.title }}</td>
+        <td>{{ item.genres }}</td>
+        <td>{{ item.year | date : "yyyy" }}</td>
+        <td>
+          <button class="btn btn-danger" (click)="removeProduct(item._id!)">
+            Xóa
+          </button>
+          <button class="btn btn-primary ms-2">Sửa</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
